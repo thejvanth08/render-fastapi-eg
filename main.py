@@ -69,6 +69,6 @@ async def detect(files: List[UploadFile] = File(...)):
     return JSONResponse(content={"detections": detections})
 
 
-if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8000))  # Default to port 8000 if PORT is not set
-    uvicorn.run(app, host="0.0.0.0", port=port)
+# if __name__ == "__main__":
+#     port = int(os.getenv("PORT", 8000))  # Default to port 8000 if PORT is not set
+#     uvicorn.run(app, host="0.0.0.0", port=port)
